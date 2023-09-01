@@ -1,3 +1,4 @@
+# Programming to make receipt
 total_amount=float(input("enter the total purchase amount:"))
 is_primium_member=str(input("are you a primium member? (yes/No): "))
 
@@ -11,14 +12,14 @@ if is_primium_member == 'yes':
     discount=primium_discount*total_amount
 else:
     discount=regular_discount*total_amount
-if total_amount > 1000:
+if total_amount >  additional_discount_threshold:
     t_discount = (total_amount*additional_discount_percent)
 else:
     t_discount = 0
 final_amount = total_amount-(discount+t_discount)
 print("RECEIPT")
 print("Total Amount: Rs.",total_amount)
-print("Discount Amount is {}".format(discount))
-print("Threshold Discount Amount:{}".format(t_discount))
+print("Discount Amount is Rs.{}".format(discount))
+print("Threshold Discount Amount:Rs.{}".format(t_discount))
 print("final Price: Rs.",final_amount)
 print("Thank You For Shopping")
