@@ -4,6 +4,7 @@
 # ID : 22BTCSE067
 
 names = ["Elayne", "Aditya", "Fariha", "Chandani", "Gautam", "Dinesh", "Hazel", "Bittu"]
+print(names)
 names.sort()
 print(f"names in alphabetical order {names}")
 names.reverse()
